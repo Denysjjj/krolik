@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лелеко Денис</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto';
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #8B4513; 
+      color: #FFD700;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    .image-container, .about-rabbit {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .rabbit-image {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .about-rabbit {
+      background-color: #F5DEB3; 
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .about-rabbit h2 {
+      color: #8B4513;
+    }
+    .about-rabbit p {
+      color: #333;
+    }
+    .about-rabbit ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .about-rabbit li {
+      margin-bottom: 10px;
+    }
+    .more-info {
+      color: #8B4513; 
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #8B4513; 
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ласкаво просимо на сайт про тварин</h1>
+  </header>
+  <main>
+    <section class="image-container">
+      <a href="https://uk.wikipedia.org/wiki/Тварини">
+        <span class="more-animals-container">
+          <img src="3.png" width="50" height="50">
+          Відкрити сторінку інших тварин
+        </span>
+      </a>
+      <img src="Ангор.webp" width="400" height="250" alt="Ангорський кролик" class="rabbit-image">
+    </section>
+    <section class="about-rabbit">
+      <h2>Ангорський кролик</h2>
+      <p>
+        Ангорський кролик - це справжня перлина серед кроликів. Він відомий своєю довгою та м'якою шерстю, а також чарівною зовнішністю.
+      </p>
+      <p class="more-info" onclick="toggleMoreInfo()">Детальніше</p>
+      <ul id="moreInfo" style="display: none;">
+        <li>Вага ангорського кролика може сягати від 8 до 10 фунтів (3,6 - 4,5 кг).</li>
+        <li>Його шерсть може бути неймовірно довгою, до 12 дюймів (31 см), і дуже м'якою на дотик.</li>
+        <li>Ці кролики відомі своєю ніжністю та дружелюбним характером, що робить їх чудовими домашніми улюбленцями.</li>
+        <li>Їхня вовна є одним з найдорожчих видів вовни у світі і використовується для виготовлення різних виробів.</li>
+      </ul>
+      <p>Дізнайтеся більше про ангорських кроликів:</p>
+      <p>Ангорський кролик - це порода кролика, яка розводиться заради її видатної вовни. Вони походять із Туреччини, де їх вперше вивели у XVII столітті. Ці чарівні тварини мають неймовірно м'яку шерсть, що робить їх популярними як домашні улюбленці та матеріал для виробництва виробів.</p>
+      <p>Шерсть ангорського кролика може бути різної довжини, але завжди вона дуже м'яка та приємна на дотик. Ці кролики потребують регулярного догляду за шерстю, включаючи щоденне чесання, щоб уникнути утворення комочків та заплутаності.</p>
+      <p>Поруч з виглядом, ангорські кролики також відомі своєю ніжністю та дружелюбним характером. Вони чудово ладнають з дітьми та іншими тваринами, створюючи приємну атмосферу в будь-якому домі. Ангорські кролики потребують відповідного догляду та уваги, але вони можуть стати прекрасними компаньйонами для тих, хто цінує м'якість і ніжність.</p>
+      <p>Якщо ви шукаєте вдома кролика з неперевершеною шерстю, який буде приносити радість та тепло, ангорський кролик може бути відмінним вибором.</p>
+      <p>Зацікавилися? Дізнайтеся більше про цих чудових тварин!</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Створено Лелеко Денисом</p>
+  </footer>
+  <script>
+    function toggleMoreInfo() {
+      var moreInfo = document.getElementById("moreInfo");
+      moreInfo.style.display === "none" ? moreInfo.style.display = "block" : moreInfo.style.display = "none";
+    }
+  </script>
+</body>
+</html>
